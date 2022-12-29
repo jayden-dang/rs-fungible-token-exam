@@ -1,16 +1,10 @@
 #+TITLE: NEAR CONTRACT
 
-#+begin_src sh :exports no :results output
 dev-1672293046853-49717456344735
-#+end_src
 
-#+begin_src sh :exports no :results output
 pnpm run deploy
-#+end_src
 
 #+RESULTS:
-#+begin_example
-
 > rs-contract@1.0.0 deploy /Users/vudangquang/Courses/VBI-Courses/rs-contract
 > cd contract && ./deploy.sh
 
@@ -21,13 +15,9 @@ Transaction Id 7qxnVKMzcQ8nLa1QRPPXFaQ8Grck4aYYHz6a2bkDkTg8
 To see the transaction in the transaction explorer, please open this url in your browser
 https://explorer.testnet.near.org/transactions/7qxnVKMzcQ8nLa1QRPPXFaQ8Grck4aYYHz6a2bkDkTg8
 Done deploying to dev-1672293046853-49717456344735
-#+end_example
 
-#+begin_src sh :exports no :results output
 near call dev-1672293046853-49717456344735 get_total_token --accountId dev-1672293046853-49717456344735
-#+end_src
 
-#+RESULTS:
 : Scheduling a call: dev-1672293046853-49717456344735.get_total_token()
 : Doing account.functionCall()
 : Transaction Id AUAwgBgxTVuyQSsgaDK6DGaLmvyZPQFaAeY1orHgqDmx
@@ -35,11 +25,8 @@ near call dev-1672293046853-49717456344735 get_total_token --accountId dev-16722
 : https://explorer.testnet.near.org/transactions/AUAwgBgxTVuyQSsgaDK6DGaLmvyZPQFaAeY1orHgqDmx
 : 100000
 
-#+begin_src sh :exports no :results output
 near call dev-1672293046853-49717456344735 get_token_account '{"account_id": "dev-1672293046853-49717456344745"}' --accountId dev-1672293046853-49717456344735
-#+end_src
 
-#+RESULTS:
 : Scheduling a call: dev-1672293046853-49717456344735.get_token_account({"account_id": "dev-1672293046853-49717456344745"})
 : Doing account.functionCall()
 : Transaction Id 3qqVW7Zg26vCbDoL4p87Kha8pgssRAoiqXLqgh2iuEAe

@@ -1,22 +1,21 @@
 #+TITLE: NEAR CONTRACT
 
-dev-1672293046853-49717456344735
+: dev-1672293046853-49717456344735
 
-pnpm run deploy
+: pnpm run deploy
 
-#+RESULTS:
-> rs-contract@1.0.0 deploy /Users/vudangquang/Courses/VBI-Courses/rs-contract
-> cd contract && ./deploy.sh
+: > rs-contract@1.0.0 deploy /Users/vudangquang/Courses/VBI-Courses/rs-contract
+: > cd contract && ./deploy.sh
 
->> Building contract
->> Deploying contract
-Starting deployment. Account id: dev-1672293046853-49717456344735, node: https://rpc.testnet.near.org, helper: https://helper.testnet.near.org, file: ./target/wasm32-unknown-unknown/release/hello_near.wasm
-Transaction Id 7qxnVKMzcQ8nLa1QRPPXFaQ8Grck4aYYHz6a2bkDkTg8
-To see the transaction in the transaction explorer, please open this url in your browser
-https://explorer.testnet.near.org/transactions/7qxnVKMzcQ8nLa1QRPPXFaQ8Grck4aYYHz6a2bkDkTg8
-Done deploying to dev-1672293046853-49717456344735
+: >> Building contract
+: >> Deploying contract
+: Starting deployment. Account id: dev-1672293046853-49717456344735, node: https://rpc.testnet.near.org, helper: https://helper.testnet.near.org, file: ./target/wasm32-unknown-unknown/release/hello_near.wasm
+: Transaction Id 7qxnVKMzcQ8nLa1QRPPXFaQ8Grck4aYYHz6a2bkDkTg8
+: To see the transaction in the transaction explorer, please open this url in your browser
+: https://explorer.testnet.near.org/transactions/7qxnVKMzcQ8nLa1QRPPXFaQ8Grck4aYYHz6a2bkDkTg8
+: Done deploying to dev-1672293046853-49717456344735
 
-near call dev-1672293046853-49717456344735 get_total_token --accountId dev-1672293046853-49717456344735
+: near call dev-1672293046853-49717456344735 get_total_token --accountId dev-1672293046853-49717456344735
 
 : Scheduling a call: dev-1672293046853-49717456344735.get_total_token()
 : Doing account.functionCall()
@@ -25,7 +24,7 @@ near call dev-1672293046853-49717456344735 get_total_token --accountId dev-16722
 : https://explorer.testnet.near.org/transactions/AUAwgBgxTVuyQSsgaDK6DGaLmvyZPQFaAeY1orHgqDmx
 : 100000
 
-near call dev-1672293046853-49717456344735 get_token_account '{"account_id": "dev-1672293046853-49717456344745"}' --accountId dev-1672293046853-49717456344735
+: near call dev-1672293046853-49717456344735 get_token_account '{"account_id": "dev-1672293046853-49717456344745"}' --accountId dev-1672293046853-49717456344735
 
 : Scheduling a call: dev-1672293046853-49717456344735.get_token_account({"account_id": "dev-1672293046853-49717456344745"})
 : Doing account.functionCall()
